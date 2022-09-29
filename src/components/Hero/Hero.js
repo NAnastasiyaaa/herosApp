@@ -11,7 +11,7 @@ const Hero = (props) => {
 
   const deleteHandler = async () => {
     await axios
-      .delete(`http://localhost:5000/heros/${_id}`)
+      .delete(`https://hero-app-nanastasiya.herokuapp.com/heros/${_id}`)
       .then((res) => res.data)
       .then(() => history("/"))
       .then(() => history("/heros"));

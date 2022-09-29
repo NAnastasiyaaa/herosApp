@@ -25,7 +25,7 @@ const AddHero = () => {
 
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:5000/heros", {
+      .post("https://hero-app-nanastasiya.herokuapp.com/heros", {
         nickname: String(inputs.nickname),
         real_name: String(inputs.real_name),
         origin_description: String(inputs.origin_description),

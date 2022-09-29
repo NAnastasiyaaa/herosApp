@@ -10,7 +10,7 @@ const Heros = () => {
   const pages = new Array(numberOfPages).fill(null).map((v, i) => i);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/heros?page=${pageNumber}`)
+    fetch(`https://hero-app-nanastasiya.herokuapp.com/heros?page=${pageNumber}`)
       .then((response) => response.json())
       .then(({ totalPages, heros }) => {
         setHeros(heros);
