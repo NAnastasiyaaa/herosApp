@@ -1,1 +1,1 @@
-client side : https://github.com/NAnastasiyaaa/herosApp-server
+server side : https://github.com/NAnastasiyaaa/herosApp-server
