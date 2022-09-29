@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, LinkComponent } from "@mui/material";
+import { Button } from "@mui/material";
 import "./Hero.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
