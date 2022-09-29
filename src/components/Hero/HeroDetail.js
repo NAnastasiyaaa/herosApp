@@ -16,7 +16,7 @@ const HeroDetail = () => {
   useEffect(() => {
     const fetchHandler = async () => {
       await axios
-        .get(`http://localhost:5000/heros/${id}`)
+        .get(`https://hero-app-nanastasiya.herokuapp.com/heros/${id}`)
         .then((res) => res.data)
         .then((data) => {
           setInputs(data.hero);
@@ -29,7 +29,7 @@ const HeroDetail = () => {
 
   const sendRequest = async () => {
     await axios
-      .put(`http://localhost:5000/heros/${id}`, {
+      .put(`https://hero-app-nanastasiya.herokuapp.com/heros/${id}`, {
         nickname: String(inputs.nickname),
         real_name: String(inputs.real_name),
         origin_description: String(inputs.origin_description),
